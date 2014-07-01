@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title><%-title%></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Le styles -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <style>
+      body { padding-top: 60px; /* 60px to make the container go all the way
+      to the bottom of the topbar */ }
+    </style>
+    <link href="assets/css/bootstrap-responsive.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+      </script>
+    <![endif]-->
+    <!-- Le fav and touch icons -->
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <style>
+    </style>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          
+          <% include nav %>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row-fluid">
+      <div>
+        <div class="row-fluid">
+          
+          <div class="span12" style="text-align:center">
+            <img src="/images/ads01.jpeg" 
+              width="98%" >
+          </div>
+          
+      </div>
+    </div>
+
+    <div style="height:30px"></div>
+    </div>
+
+    <div class="container">
+      <div class="hero-unit">
+        <div>
+          <h2>Open is the ONLY Way!</h2>
+          <p>
+            Let your data keep open, let the world keep connect to you! <br/>
+            Open data is the idea that certain data should be freely available to everyone to use and republish as they wish, 
+            without restrictions from copyright, patents or other mechanisms of control. 
+            The goals of the open data movement are similar to those of other "Open" movements such as open source, 
+            open hardware, open content, and open access. <br/>
+            <h3>Try NOW! Customize your query of OpenData!</h3>
+            RESTful API:<br/>
+              <code>
+              [Mac or Linux]$ curl -sS http://odf.micloud.tw/odf/map/GetAnimals -X POST -T map.json -H 'Content-Type:application/json'
+              </code>
+              <br/>
+            Map function:<br/>
+              <code>
+              {
+                "map": "function(doc){ if(doc && doc.Type == '犬' && doc.Name == '小虎') { return doc; }}"
+              }
+              </code>
+          </p>
+        </div>
+        <a class="btn btn-primary" href="#">
+          Learn more »
+        </a>
+      </div>
+
+      <div class="row span12">
+        <div class="span4">
+          <div>
+            <h2>
+              Upload your Data!</h2>
+            <p>
+              Upload your data now.
+            </p>
+          </div>
+          <a class="btn" href="#">
+            View details »
+          </a>
+        </div>
+        <div class="span4">
+          <div>
+            <h2>Search Open Data!</h2>
+            <p>
+              You can search OpenData by the following way:
+              <ul>
+                <li>Search in the odf web page</li>
+                <li>Query by command line (comming soon)</li>
+                <li>Customize query by RESTful</li>
+              </ul>
+            </code>
+            </p>
+          </div>
+          <a class="btn" href="#" onclick="alert('Comming Soon!');">
+            View details »
+          </a>
+        </div>
+        <div class="span4">
+          <div>
+            <h2>
+              Data for Price!</h2>
+            <p>
+              Free trial NOW! Upload your data NOW!<br/>
+              Need more enterprise plan? Contact <a href="simonsu@mitac.com.tw">ME</a>.
+            </p>
+          </div>
+          <a class="btn" href="#" onclick="alert('Comming Soon!');">
+            View details »
+          </a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="span12" style="text-align:center;height:50px;padding-top:20px;">
+      MiCloud © Company 2012
+    </div>
+    <style>
+
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+    </script>
+    <script src="assets/js/bootstrap.js">
+    </script>
+    <script>
+
+    </script>
+  </body>
+</html>

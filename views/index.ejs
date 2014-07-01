@@ -1,0 +1,14 @@
+<h1><%= title %></h1>
+keyword: <%=keyword%><br/>
+description: <%=description%><br/>
+<%if(locals.pages) {%>
+<div style="width:100%;text-align:right">
+<select id="pg">
+  <%for(var i = 0 ; i < locals.pages ; i++ ) {%>
+    <option <%-(i==locals.curr)? 'selected' : ''%> value="<%-i%>">Page <%-i + 1%></option>
+  <%}%>
+</select>
+</div>
+<%}%>
+<hr/>
+<%-data%>
