@@ -207,7 +207,7 @@ function jsonArrToTable(arr){
 
 app.get('/api', function(req, res){
   var body = mkup(fs.readFileSync(__dirname + '/mdfiles/api.md', 'UTF-8'));
-  log.info(body);
+  //log.info(body);
   res.render('index', {
     title: 'OpenDataFramework API Document', 
     keyword: 'API,ODF,Open Data',
