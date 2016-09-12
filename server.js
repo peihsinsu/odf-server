@@ -159,8 +159,8 @@ app.post('/odf/upload/:name', auth, function(req, res, next){
 })
 
 function handleUpload(fname, data){
-  var meta = {}
-    , meta.name = fname;
+  var meta = {};
+  meta.name = fname;
   //basic check: 1. data not null, 2. is a object, 3. is an array
   if(data && _.isObject(data) && _.isArray(data)) {
     var folder = __dirname + '/data/' + name;
